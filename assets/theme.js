@@ -102,19 +102,23 @@
     tick(); setInterval(tick, 1000);
   }
 
-  /* stack category selector — filters the panel to the active category; hover previews, click locks */
+  /* stack category selector — all tools shown; hovering a category highlights its tools, dims the rest */
   document.querySelectorAll(".stack3").forEach((stack) => {
     const cats = [...stack.querySelectorAll(".s3cat")];
-    const groups = [...stack.querySelectorAll(".s3-tools")];
+    const tools = [...stack.querySelectorAll(".s3tool")];
     const apply = (cat) => {
-      cats.forEach((c) => c.classList.toggle("active", c.dataset.cat === cat));
-      groups.forEach((g) => g.classList.toggle("show", g.dataset.cat === cat));
+      cats.forEach((c) => c.classList.toggle("active", !!cat && c.dataset.cat === cat));
+      tools.forEach((t) => {
+        const on = !!cat && t.dataset.cat === cat;
+        t.classList.toggle("is-on", on);
+        t.classList.toggle("is-dim", !!cat && !on);
+      });
     };
-    let locked = stack.dataset.default || (cats[0] && cats[0].dataset.cat);
+    let locked = stack.dataset.default || null; // default: all tools shown, none dimmed
     cats.forEach((c) => {
       c.addEventListener("mouseenter", () => apply(c.dataset.cat));
       c.addEventListener("focus", () => apply(c.dataset.cat));
-      c.addEventListener("click", () => { locked = c.dataset.cat; apply(locked); });
+      c.addEventListener("click", () => { locked = locked === c.dataset.cat ? null : c.dataset.cat; apply(locked); });
     });
     const nav = stack.querySelector(".stack3-nav");
     if (nav) nav.addEventListener("mouseleave", () => apply(locked));
