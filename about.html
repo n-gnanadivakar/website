@@ -26,7 +26,7 @@
 </header>
 
 <!-- HERO / BIO -->
-<header class="hero hero--sub wrap">
+<header class="hero hero--sub hero--flush wrap">
   <div class="eyebrow mono"><span class="rule"></span>About</div>
   <div class="about-grid" style="align-items:start;margin-top:clamp(20px,3vw,32px)">
     <div>
@@ -46,7 +46,7 @@
 </header>
 
 <!-- EXPERIENCE -->
-<section class="wrap">
+<section class="wrap about-sec">
   <div class="sec-head">
     <span class="mono num">01 / Career</span>
     <h2 class="line-mask"><span>Experience.</span></h2>
@@ -62,31 +62,27 @@
 </section>
 
 <!-- STACK -->
-<section class="wrap">
+<section class="wrap about-sec">
   <div class="sec-head">
     <span class="mono num">02 / Stack</span>
     <h2 class="line-mask"><span>Tools of the craft.</span></h2>
   </div>
-  <div class="stack3" data-default="design">
+  <div class="stack3">
     <div class="stack3-nav">
-      <button class="s3cat active" type="button" data-cat="design"><span class="s3-ix">01</span><span class="s3-main"><span class="s3-name">Design &amp; Prototyping</span><span class="s3-sub">Interfaces, systems, flows</span></span><span class="s3-count">1</span></button>
-      <button class="s3cat" type="button" data-cat="visual"><span class="s3-ix">02</span><span class="s3-main"><span class="s3-name">Visual Craft</span><span class="s3-sub">Imagery &amp; illustration</span></span><span class="s3-count">3</span></button>
-      <button class="s3cat" type="button" data-cat="ai"><span class="s3-ix">03</span><span class="s3-main"><span class="s3-name">AI &amp; Build</span><span class="s3-sub">Prototyping &amp; shipping fast</span></span><span class="s3-count">4</span></button>
+      <button class="s3cat" type="button" data-cat="ai"><span class="s3-ix">01</span><span class="s3-main"><span class="s3-name">AI &amp; Build</span><span class="s3-sub">Prototyping &amp; shipping fast</span></span><span class="s3-count">4</span></button>
+      <button class="s3cat" type="button" data-cat="design"><span class="s3-ix">02</span><span class="s3-main"><span class="s3-name">Design &amp; Prototyping</span><span class="s3-sub">Interfaces, systems, flows</span></span><span class="s3-count">1</span></button>
+      <button class="s3cat" type="button" data-cat="visual"><span class="s3-ix">03</span><span class="s3-main"><span class="s3-name">Visual Craft</span><span class="s3-sub">Imagery &amp; illustration</span></span><span class="s3-count">3</span></button>
     </div>
     <div class="stack3-panel">
-      <div class="s3-tools show" data-cat="design">
-        <div class="s3tool"><span class="tile" style="--b:#F24E1E">Fi</span><span><span class="tn">Figma</span><span class="tr">UI · Systems · Prototypes</span></span></div>
-      </div>
-      <div class="s3-tools" data-cat="visual">
-        <div class="s3tool"><span class="tile" style="--b:#31A8FF">Ps</span><span><span class="tn">Photoshop</span><span class="tr">Retouch &amp; composite</span></span></div>
-        <div class="s3tool"><span class="tile" style="--b:#FF9A00">Ai</span><span><span class="tn">Illustrator</span><span class="tr">Vector &amp; marks</span></span></div>
-        <div class="s3tool"><span class="tile" style="--b:#3AA9FF">Lr</span><span><span class="tn">Lightroom</span><span class="tr">Photo grading</span></span></div>
-      </div>
-      <div class="s3-tools" data-cat="ai">
-        <div class="s3tool"><span class="tile" style="--b:#D97757">CC</span><span><span class="tn">Claude Code</span><span class="tr">Ship in code</span></span></div>
-        <div class="s3tool"><span class="tile" style="--b:#FF5A8A">Lo</span><span><span class="tn">Lovable</span><span class="tr">Rapid web apps</span></span></div>
-        <div class="s3tool"><span class="tile" style="--b:#0D99FF">FM</span><span><span class="tn">Figma Make</span><span class="tr">Prompt to design</span></span></div>
-        <div class="s3tool"><span class="tile" style="--b:#7C5CFF">Mg</span><span><span class="tn">Magnific</span><span class="tr">AI upscaling</span></span></div>
+      <div class="s3-grid">
+        <div class="s3tool" data-cat="ai"><span class="tile"><img src="assets/img/logos/claude.svg" alt="Claude Code" loading="lazy" /></span><span><span class="tn">Claude Code</span><span class="tr">Ship in code</span></span></div>
+        <div class="s3tool" data-cat="ai"><span class="tile"><img src="assets/img/logos/lovable.svg" alt="Lovable" loading="lazy" /></span><span><span class="tn">Lovable</span><span class="tr">Rapid web apps</span></span></div>
+        <div class="s3tool" data-cat="ai"><span class="tile"><img src="assets/img/logos/figma-make.svg" alt="Figma Make" loading="lazy" /></span><span><span class="tn">Figma Make</span><span class="tr">Prompt to design</span></span></div>
+        <div class="s3tool" data-cat="ai"><span class="tile"><img src="assets/img/logos/magnific.svg" alt="Magnific" loading="lazy" /></span><span><span class="tn">Magnific</span><span class="tr">AI upscaling</span></span></div>
+        <div class="s3tool" data-cat="design"><span class="tile"><img src="assets/img/logos/figma.svg" alt="Figma" loading="lazy" /></span><span><span class="tn">Figma</span><span class="tr">UI · Systems · Prototypes</span></span></div>
+        <div class="s3tool" data-cat="visual"><span class="tile"><img src="assets/img/logos/photoshop.svg" alt="Photoshop" loading="lazy" /></span><span><span class="tn">Photoshop</span><span class="tr">Retouch &amp; composite</span></span></div>
+        <div class="s3tool" data-cat="visual"><span class="tile"><img src="assets/img/logos/illustrator.svg" alt="Illustrator" loading="lazy" /></span><span><span class="tn">Illustrator</span><span class="tr">Vector &amp; marks</span></span></div>
+        <div class="s3tool" data-cat="visual"><span class="tile"><img src="assets/img/logos/lightroom.svg" alt="Lightroom" loading="lazy" /></span><span><span class="tn">Lightroom</span><span class="tr">Photo grading</span></span></div>
       </div>
     </div>
   </div>
