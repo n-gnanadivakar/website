@@ -3,6 +3,54 @@
   const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const fine = window.matchMedia("(min-width:900px)").matches && !window.matchMedia("(pointer:coarse)").matches;
 
+  /* mobile menu — built from the existing nav links so it works on every page.
+     On small screens the header pill hides its links; this hamburger + overlay
+     restore navigation to Work / About / Let's talk. */
+  (function initMobileNav() {
+    const navInner = document.querySelector(".nav-inner");
+    const navLinks = document.querySelector(".nav-links");
+    if (!navInner || !navLinks) return;
+
+    const toggle = document.createElement("button");
+    toggle.className = "nav-toggle";
+    toggle.type = "button";
+    toggle.setAttribute("aria-label", "Open menu");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.innerHTML = "<span></span><span></span>";
+    navInner.appendChild(toggle);
+
+    const menu = document.createElement("div");
+    menu.className = "mobile-menu";
+    const inner = document.createElement("nav");
+    inner.className = "mobile-menu-inner";
+    inner.setAttribute("aria-label", "Mobile");
+    navLinks.querySelectorAll("a").forEach((a) => {
+      const link = document.createElement("a");
+      link.href = a.getAttribute("href");
+      const span = a.querySelector("span:not(.dot)");
+      link.textContent = (span ? span.textContent : a.textContent).trim();
+      link.className = "mm-link" + (a.classList.contains("btn") ? " mm-cta" : "");
+      if (a.target) { link.target = a.target; link.rel = a.rel || "noopener"; }
+      inner.appendChild(link);
+    });
+    menu.appendChild(inner);
+    document.body.appendChild(menu);
+
+    const setOpen = (open) => {
+      document.body.classList.toggle("menu-open", open);
+      toggle.classList.toggle("is-active", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      if (window.__lenis) { open ? window.__lenis.stop() : window.__lenis.start(); }
+    };
+    toggle.addEventListener("click", () => setOpen(!document.body.classList.contains("menu-open")));
+    menu.addEventListener("click", (e) => { if (e.target === menu) setOpen(false); });
+    inner.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
+    // close if resized up to desktop while open
+    window.matchMedia("(min-width:721px)").addEventListener("change", (e) => { if (e.matches) setOpen(false); });
+  })();
+
   /* Lenis smooth scroll (loaded from CDN, native fallback if unavailable) */
   if (!RM) {
     const startLenis = (L) => {
