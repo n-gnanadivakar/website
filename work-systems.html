@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Core Systems — AI-Driven Design System · Gnana Divakar</title>
+<meta name="description" content="Core Systems — an AI-driven, token-based design system for enterprise: accessible foundations, interactive components, theming, and the full workflow behind it." />
+<link rel="stylesheet" href="assets/theme.css" />
+</head>
+<body>
+<div class="grain"></div>
+<div class="aurora"><div class="blob a"></div><div class="blob b"></div></div>
+<div class="progress"></div>
+<div class="cursor"></div>
+<div class="cursor-ring"><span class="label">View</span></div>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo" data-cursor><span class="pulse"></span>Gnana Divakar</a>
+    <div class="nav-links">
+      <a href="work.html" class="navlink active" data-cursor>Work</a>
+      <a href="about.html" class="navlink" data-cursor>About</a>
+      <a href="contact.html" class="btn btn-primary btn-sm" data-cursor data-magnetic><span>Let's talk</span><span class="dot">→</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="cs-hero">
+  <div class="wrap">
+    <p class="eyebrow reveal">AI-Driven Design System · Enterprise</p>
+    <div class="two-col" style="align-items:end;margin-top:24px">
+      <div class="body-col" style="grid-column:span 8">
+        <h1 class="line-mask"><span>Core Systems. <em class="italic-bold text-accent">One language for the whole product.</em></span></h1>
+        <div class="cs-tags reveal">
+          <span class="tag">Design Tokens</span><span class="tag">Interactive Components</span><span class="tag">WCAG AA</span><span class="tag">Theming</span><span class="tag">Figma ↔ Code</span><span class="tag">AI-Driven Workflow</span>
+        </div>
+      </div>
+      <div class="lead-col reveal" style="grid-column:span 4">
+        <p class="prose">A token-based design system for a large enterprise SaaS product — built with an AI-driven workflow so a small team could ship foundations, components, and accessible theming at a scale that normally needs a whole platform team.</p>
+      </div>
+    </div>
+
+    <!-- overview stat strip -->
+    <div class="ds-overview reveal" style="margin-top:clamp(32px,4vw,48px)">
+      <div class="ds-ov"><div class="n"><span data-count="320" data-suffix="+">0+</span></div><div class="l">Design Tokens</div></div>
+      <div class="ds-ov"><div class="n"><span data-count="60" data-suffix="+">0+</span></div><div class="l">Components</div></div>
+      <div class="ds-ov"><div class="n">AA</div><div class="l">WCAG Compliant</div></div>
+      <div class="ds-ov"><div class="n"><span data-count="8" data-suffix="+">0+</span></div><div class="l">Teams Onboarded</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2ND SECTION — APPROACH (AI-driven, native light cards) -->
+<section class="sec">
+  <div class="wrap">
+    <div class="ds-sechead reveal">
+      <p class="eyebrow">The Approach</p>
+      <h2 class="sec-h line-mask"><span>An enterprise system, <em class="italic-bold text-accent">built the AI-driven way.</em></span></h2>
+      <p class="cs-lead">Enterprise design systems usually need a dedicated platform team and a long runway. I compress that by putting AI inside the workflow — generating token ramps, scaffolding component states, and checking accessibility — while I own the structure, the decisions, and the taste.</p>
+    </div>
+    <div class="cardgrid c4 ds-approach reveal" style="margin-top:38px">
+      <div class="card"><p class="ac-n">01</p><h3>AI-generated foundations</h3><p>Token ramps, type scales, and spacing are generated and named consistently, then tuned by hand — no more hand-mixing hex values.</p><div class="cc-tags"><span class="tag">Tokens</span></div></div>
+      <div class="card"><p class="ac-n">02</p><h3>Scaffolded components</h3><p>Every variant and state is scaffolded from tokens, so the library goes wide fast while staying coherent.</p><div class="cc-tags"><span class="tag">Components</span></div></div>
+      <div class="card"><p class="ac-n">03</p><h3>Accessibility in the loop</h3><p>Contrast, focus, and target sizes are checked automatically on every token pairing and state — WCAG AA as a default, not a review.</p><div class="cc-tags"><span class="tag">WCAG AA</span></div></div>
+      <div class="card"><p class="ac-n">04</p><h3>Docs &amp; parity, automated</h3><p>Usage docs and Figma ↔ code parity are generated alongside the components, so the system stays trustworthy as it grows.</p><div class="cc-tags"><span class="tag">Governance</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COLOR -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="ds-sechead reveal">
+      <p class="eyebrow">Foundations · Color</p>
+      <h2 class="sec-h line-mask"><span>A calm palette <em class="italic-bold text-accent">that passes AA.</em></span></h2>
+      <p class="cs-lead">Enterprise UI is read all day, so the palette is deliberately restrained — desaturated ramps, with text and status colors tuned to meet WCAG AA contrast on the product's surfaces.</p>
+    </div>
+
+    <!-- primitive ramps -->
+    <div class="ds-group reveal" style="margin-top:36px">
+      <p class="ds-gk">Primitive Ramps <span class="muted">· 50 → 900</span></p>
+      <div style="display:flex;flex-direction:column">
+        <div class="ds-color-row">
+          <div class="crk">Brand<span>brand</span></div>
+          <div class="ds-ramp">
+            <span style="background:#EEF1FD;color:#2340BC">50</span>
+            <span style="background:#DAE1FB;color:#2340BC">100</span>
+            <span style="background:#B6C4F5;color:#1B3290">200</span>
+            <span style="background:#8AA0EC;color:#14246E">300</span>
+            <span style="background:#5879E6;color:#fff">400</span>
+            <span style="background:#2B4FE8;color:#fff">500</span>
+            <span style="background:#2340BC;color:#fff">600</span>
+            <span style="background:#1B3290;color:#fff">700</span>
+            <span style="background:#14246E;color:#fff">800</span>
+            <span style="background:#0D1742;color:#fff">900</span>
+          </div>
+        </div>
+        <div class="ds-color-row">
+          <div class="crk">Neutral<span>neutral</span></div>
+          <div class="ds-ramp">
+            <span style="background:#F6F5F2;color:#41413C">50</span>
+            <span style="background:#EBEAE6;color:#41413C">100</span>
+            <span style="background:#DAD9D3;color:#41413C">200</span>
+            <span style="background:#C2C1BA;color:#41413C">300</span>
+            <span style="background:#9B9B93;color:#fff">400</span>
+            <span style="background:#797971;color:#fff">500</span>
+            <span style="background:#5A5A53;color:#fff">600</span>
+            <span style="background:#41413C;color:#fff">700</span>
+            <span style="background:#2A2A27;color:#fff">800</span>
+            <span style="background:#0B0B0F;color:#fff">900</span>
+          </div>
+        </div>
+        <div class="ds-color-row">
+          <div class="crk">Success<span>green</span></div>
+          <div class="ds-ramp">
+            <span style="background:#EDF4F0;color:#2A5C44">50</span>
+            <span style="background:#D4E6DC;color:#2A5C44">100</span>
+            <span style="background:#AACCBA;color:#204735">200</span>
+            <span style="background:#7BAE94;color:#163324">300</span>
+            <span style="background:#4F8E70;color:#fff">400</span>
+            <span style="background:#367355;color:#fff">500</span>
+            <span style="background:#2A5C44;color:#fff">600</span>
+            <span style="background:#204735;color:#fff">700</span>
+            <span style="background:#163324;color:#fff">800</span>
+            <span style="background:#0E2117;color:#fff">900</span>
+          </div>
+        </div>
+        <div class="ds-color-row">
+          <div class="crk">Warning<span>amber</span></div>
+          <div class="ds-ramp">
+            <span style="background:#FAF4E9;color:#7C5A1A">50</span>
+            <span style="background:#F2E3C6;color:#7C5A1A">100</span>
+            <span style="background:#E4C994;color:#5F4514">200</span>
+            <span style="background:#D1AB60;color:#43310E">300</span>
+            <span style="background:#B98B38;color:#fff">400</span>
+            <span style="background:#986F1F;color:#fff">500</span>
+            <span style="background:#7C5A1A;color:#fff">600</span>
+            <span style="background:#5F4514;color:#fff">700</span>
+            <span style="background:#43310E;color:#fff">800</span>
+            <span style="background:#291E08;color:#fff">900</span>
+          </div>
+        </div>
+        <div class="ds-color-row">
+          <div class="crk">Danger<span>red</span></div>
+          <div class="ds-ramp">
+            <span style="background:#FAEEED;color:#822F29">50</span>
+            <span style="background:#F1D5D2;color:#822F29">100</span>
+            <span style="background:#E1ADA7;color:#64241F">200</span>
+            <span style="background:#CC7E76;color:#471A16">300</span>
+            <span style="background:#B65850;color:#fff">400</span>
+            <span style="background:#9E3A33;color:#fff">500</span>
+            <span style="background:#822F29;color:#fff">600</span>
+            <span style="background:#64241F;color:#fff">700</span>
+            <span style="background:#471A16;color:#fff">800</span>
+            <span style="background:#2C100D;color:#fff">900</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- semantic tokens -->
+    <div class="ds-group reveal">
+      <p class="ds-gk">Semantic Tokens <span class="muted">· what components bind to · AA = passes contrast</span></p>
+      <div class="ds-swatches">
+        <div class="ds-sw"><div class="chip" style="background:#0B0B0F"></div><div class="sw-meta"><div class="sw-name">fg / default</div><div class="sw-val">neutral.900</div><span class="aa">AA</span></div></div>
+        <div class="ds-sw"><div class="chip" style="background:#5A5A53"></div><div class="sw-meta"><div class="sw-name">fg / muted</div><div class="sw-val">neutral.600</div><span class="aa">AA</span></div></div>
+        <div class="ds-sw"><div class="chip" style="background:#2B4FE8"></div><div class="sw-meta"><div class="sw-name">accent / solid</div><div class="sw-val">brand.500</div></div></div>
+        <div class="ds-sw"><div class="chip" style="background:#1B3290"></div><div class="sw-meta"><div class="sw-name">accent / text</div><div class="sw-val">brand.700</div><span class="aa">AA</span></div></div>
+        <div class="ds-sw"><div class="chip" style="background:#2A5C44"></div><div class="sw-meta"><div class="sw-name">status / success</div><div class="sw-val">green.600</div><span class="aa">AA</span></div></div>
+        <div class="ds-sw"><div class="chip" style="background:#7C5A1A"></div><div class="sw-meta"><div class="sw-name">status / warning</div><div class="sw-val">amber.600</div><span class="aa">AA</span></div></div>
+        <div class="ds-sw"><div class="chip" style="background:#822F29"></div><div class="sw-meta"><div class="sw-name">status / danger</div><div class="sw-val">red.600</div><span class="aa">AA</span></div></div>
+        <div class="ds-sw"><div class="chip" style="background:#EBEAE6;box-shadow:inset 0 0 0 1px rgba(11,11,15,.1)"></div><div class="sw-meta"><div class="sw-name">surface / base</div><div class="sw-val">neutral.100</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section class="sec">
+  <div class="wrap">
+    <div class="ds-sechead reveal">
+      <p class="eyebrow">Foundations · Typography</p>
+      <h2 class="sec-h line-mask"><span>A scale that holds <em class="italic-bold text-accent">at every size.</em></span></h2>
+      <p class="cs-lead">One modular scale drives hierarchy across the product — paired weights and line-heights keep long-form reading and dense UI equally legible.</p>
+    </div>
+    <div class="ds-type reveal" style="margin-top:36px">
+      <div class="ty"><span class="tk">display</span><span class="tv" style="font-size:44px">Clarity at scale</span><span class="ts">44 / 1.0 · 600</span></div>
+      <div class="ty"><span class="tk">heading</span><span class="tv" style="font-size:30px">Section heading</span><span class="ts">30 / 1.1 · 600</span></div>
+      <div class="ty"><span class="tk">title</span><span class="tv" style="font-size:21px">Card &amp; panel title</span><span class="ts">21 / 1.3 · 600</span></div>
+      <div class="ty"><span class="tk">body</span><span class="tv" style="font-size:16px;font-weight:400">Body text for comfortable reading</span><span class="ts">16 / 1.6 · 400</span></div>
+      <div class="ty"><span class="tk">label</span><span class="tv" style="font-size:14px;font-weight:600">Form &amp; control label</span><span class="ts">14 / 1.4 · 600</span></div>
+      <div class="ty"><span class="tk">caption</span><span class="tv" style="font-size:13px;font-weight:400;color:var(--ink-mute)">Caption &amp; metadata</span><span class="ts">13 / 1.4 · 400</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPACE · RADIUS · ELEVATION · MOTION -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="ds-sechead reveal">
+      <p class="eyebrow">Foundations · Space, Radius, Elevation &amp; Motion</p>
+      <h2 class="sec-h line-mask"><span>The quiet tokens <em class="italic-bold text-accent">that do the most work.</em></span></h2>
+      <p class="cs-lead">A 4px spacing base, a small set of radii, three elevation levels, and shared motion — enough to build any layout, few enough to stay consistent everywhere.</p>
+    </div>
+
+    <div class="ds-group reveal" style="margin-top:36px">
+      <p class="ds-gk">Spacing <span class="muted">· 4px base</span></p>
+      <div class="ds-space">
+        <div class="sp"><span class="spk">space.1 · 4</span><div class="spbar" style="width:4%"></div></div>
+        <div class="sp"><span class="spk">space.2 · 8</span><div class="spbar" style="width:8%"></div></div>
+        <div class="sp"><span class="spk">space.3 · 12</span><div class="spbar" style="width:14%"></div></div>
+        <div class="sp"><span class="spk">space.4 · 16</span><div class="spbar" style="width:22%"></div></div>
+        <div class="sp"><span class="spk">space.6 · 24</span><div class="spbar" style="width:38%"></div></div>
+        <div class="sp"><span class="spk">space.8 · 32</span><div class="spbar" style="width:56%"></div></div>
+        <div class="sp"><span class="spk">space.12 · 48</span><div class="spbar" style="width:80%"></div></div>
+      </div>
+    </div>
+
+    <div class="ds-group reveal">
+      <p class="ds-gk">Radius &amp; Elevation</p>
+      <div class="ds-tiles">
+        <div class="ds-tile"><div class="box e1"></div><div><div class="tl-k">elevation.1</div><div class="tl-v">cards · rows</div></div></div>
+        <div class="ds-tile"><div class="box e2"></div><div><div class="tl-k">elevation.2</div><div class="tl-v">dropdowns · popovers</div></div></div>
+        <div class="ds-tile"><div class="box e3"></div><div><div class="tl-k">elevation.3</div><div class="tl-v">modals · dialogs</div></div></div>
+        <div class="ds-tile"><div class="box" style="border-radius:4px"></div><div><div class="tl-k">radius.sm · 4</div><div class="tl-v">inputs · chips</div></div></div>
+        <div class="ds-tile"><div class="box" style="border-radius:12px"></div><div><div class="tl-k">radius.md · 12</div><div class="tl-v">cards · surfaces</div></div></div>
+        <div class="ds-tile"><div class="box" style="border-radius:999px"></div><div><div class="tl-k">radius.full</div><div class="tl-v">buttons · pills</div></div></div>
+      </div>
+    </div>
+
+    <div class="ds-group reveal">
+      <p class="ds-gk">Motion <span class="muted">· duration &amp; easing</span></p>
+      <div class="ds-motion">
+        <div class="ds-moto"><div class="track"><i style="animation-duration:2.2s;animation-timing-function:cubic-bezier(.16,1,.3,1)"></i></div><div class="mk">motion.fast</div><div class="mv">120ms · ease-out</div></div>
+        <div class="ds-moto"><div class="track"><i style="animation-duration:2.6s;animation-timing-function:cubic-bezier(.16,1,.3,1)"></i></div><div class="mk">motion.base</div><div class="mv">240ms · ease-out</div></div>
+        <div class="ds-moto"><div class="track"><i style="animation-duration:3.2s;animation-timing-function:cubic-bezier(.4,0,.2,1)"></i></div><div class="mk">motion.slow</div><div class="mv">400ms · standard</div></div>
+        <div class="ds-moto"><div class="track"><i style="animation-duration:2.6s;animation-timing-function:cubic-bezier(.34,1.56,.64,1)"></i></div><div class="mk">motion.spring</div><div class="mv">240ms · overshoot</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENTS (interactive) -->
+<section class="sec ds-live">
+  <div class="wrap">
+    <div class="ds-sechead reveal">
+      <p class="eyebrow">The Library · Interactive</p>
+      <h2 class="sec-h line-mask"><span>Components as contracts, <em class="italic-bold text-accent">not just pixels.</em></span></h2>
+      <p class="cs-lead">These specimens are live — click, type, toggle. Every component carries defined variants, states, and accessibility behavior, all built from the same token foundation.</p>
+    </div>
+
+    <!-- Actions -->
+    <div class="ds-group reveal" style="margin-top:36px">
+      <p class="ds-gk">Actions</p>
+      <div class="ds-specimens">
+        <div class="ds-spec"><span class="spec-k">Button · variants</span><div class="spec-stage"><button class="ds-btn accent">Primary</button><button class="ds-btn">Solid</button><button class="ds-btn ghost">Ghost</button></div></div>
+        <div class="ds-spec"><span class="spec-k">Button · sizes</span><div class="spec-stage"><button class="ds-btn accent">Default</button><button class="ds-btn accent sm">Small</button></div></div>
+        <div class="ds-spec"><span class="spec-k">Chips · selectable</span><div class="spec-stage"><button class="ds-chip sel"><span class="ds-dot"></span>Design</button><button class="ds-chip"><span class="ds-dot"></span>Engineering</button><button class="ds-chip"><span class="ds-dot"></span>Research</button></div></div>
+        <div class="ds-spec"><span class="spec-k">Tabs</span><div class="spec-stage"><span class="ds-tabs"><span class="on">Overview</span><span>Activity</span><span>Settings</span></span></div></div>
+      </div>
+    </div>
+
+    <!-- Forms -->
+    <div class="ds-group reveal">
+      <p class="ds-gk">Forms &amp; Inputs</p>
+      <div class="ds-specimens">
+        <div class="ds-spec"><span class="spec-k">Text input</span><div class="spec-stage col"><input class="ds-field" type="text" placeholder="Type here…" /></div></div>
+        <div class="ds-spec"><span class="spec-k">Select</span><div class="spec-stage col"><select class="ds-field"><option>Choose an option</option><option>Option one</option><option>Option two</option><option>Option three</option></select></div></div>
+        <div class="ds-spec"><span class="spec-k">Toggle &amp; checkbox</span><div class="spec-stage"><button class="ds-toggle" aria-label="Toggle"></button><button class="ds-toggle off" aria-label="Toggle"></button><button class="ds-check" aria-label="Checkbox"></button></div></div>
+        <div class="ds-spec"><span class="spec-k">Slider</span><div class="spec-stage col"><input class="ds-range" type="range" min="0" max="100" value="48" /><span class="spec-k" style="color:var(--ink-mute)">Value · <span data-rval>48</span></span></div></div>
+      </div>
+    </div>
+
+    <!-- Feedback -->
+    <div class="ds-group reveal">
+      <p class="ds-gk">Feedback &amp; Status</p>
+      <div class="ds-specimens">
+        <div class="ds-spec"><span class="spec-k">Badge · status</span><div class="spec-stage"><span class="ds-badge ok">Active</span><span class="ds-badge info">New</span><span class="ds-badge warn">Pending</span><span class="ds-badge danger">Error</span><span class="ds-badge mute">Draft</span></div></div>
+        <div class="ds-spec" data-stepper="60"><span class="spec-k">Progress · steppable</span><div class="spec-stage col"><div class="ds-progress"><i></i></div><div style="display:flex;justify-content:space-between;align-items:center"><span class="spec-k" style="color:var(--ink-mute)" data-pval>60% complete</span><span class="ds-stepper"><button data-dir="down" aria-label="Decrease">−</button><button data-dir="up" aria-label="Increase">+</button></span></div></div></div>
+        <div class="ds-spec"><span class="spec-k">Tooltip · hover</span><div class="spec-stage"><span class="ds-tip"><button class="ds-btn ghost sm">Hover me</button><span class="tip">Tokens make this consistent</span></span></div></div>
+        <div class="ds-spec"><span class="spec-k">Presence</span><div class="spec-stage"><span class="ds-avatars"><span class="ds-avatar"></span><span class="ds-avatar"></span><span class="ds-avatar"></span></span><span class="ds-chip" style="pointer-events:none"><span class="ds-dot g"></span>Online</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THEMING -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec-grid" style="align-items:start">
+      <div class="col-5" style="grid-column:span 5">
+        <p class="eyebrow reveal">Theming</p>
+        <h2 class="sec-h line-mask" style="margin-top:14px"><span>One UI. <em class="italic-bold text-accent">Every theme, for free.</em></span></h2>
+        <p class="cs-lead reveal" style="max-width:32rem">Components never reference a raw color — only semantic tokens, which remap per theme mode. Switch the mode and the whole product re-themes. Nothing forks.</p>
+        <div class="varbox reveal" style="margin-top:32px;max-width:32rem">
+          <p class="k">The token layers</p>
+          <div class="grid">
+            <div class="cell"><div class="cn">01</div><div class="cv">Primitive tokens</div></div>
+            <div class="cell"><div class="cn">02</div><div class="cv">Semantic tokens</div></div>
+            <div class="cell"><div class="cn">03</div><div class="cv">Theme modes</div></div>
+            <div class="cell"><div class="cn">04</div><div class="cv">Component tokens</div></div>
+          </div>
+          <div class="foot">Swap the mode → the whole UI re-themes</div>
+        </div>
+      </div>
+      <div class="col-7" style="grid-column:span 7">
+        <div class="ds-board reveal" style="grid-template-columns:1fr 1fr">
+          <div class="bp">
+            <span class="pk">Mode · Light</span>
+            <div class="stack">
+              <div class="row"><span class="ds-btn accent" style="pointer-events:none">Action</span><span class="ds-badge ok">Active</span></div>
+              <span class="ds-field focus">Semantic tokens</span>
+              <div class="ds-progress"><i></i></div>
+            </div>
+          </div>
+          <div class="bp" style="background:#14151d;border-color:rgba(255,255,255,.1)">
+            <span class="pk" style="color:rgba(235,234,230,.5)">Mode · Dark</span>
+            <div class="stack">
+              <div class="row"><span class="ds-btn accent" style="pointer-events:none">Action</span><span class="ds-badge info" style="background:rgba(110,140,255,.16);border-color:rgba(110,140,255,.4);color:#9db0ff">Active</span></div>
+              <span class="ds-field" style="background:#1d1f28;border-color:rgba(255,255,255,.14);color:rgba(235,234,230,.6)">Semantic tokens</span>
+              <div class="ds-progress" style="background:rgba(255,255,255,.12)"><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="rowlist reveal" style="margin-top:36px">
+          <div class="rl"><div class="k">Parity</div><div><h3>Figma ↔ Code, one source of truth</h3><p>Tokens and components are defined once and kept in sync between the Figma library and production code — a designer's file and the shipped UI never drift.</p></div></div>
+          <div class="rl"><div class="k">Governance</div><div><h3>Versioned, documented, contributable</h3><p>Semantic versioning with changelogs and a clear proposal → review → publish path, so the system grows from real needs and teams adopt updates on their own schedule.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE FULL WORKFLOW (complete, AI-driven) -->
+<section class="sec">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">The Full Workflow</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>End to end, <em class="italic-bold text-accent">from audit to adoption.</em></span></h2>
+      <p class="cs-lead reveal">This is the complete flow I run to stand up an AI-driven design system — the same process start to finish. AI does the heavy lifting; the architecture, the judgment, and the quality bar are mine.</p>
+      <div class="stacklist" style="margin-top:40px">
+        <div class="li reveal"><span class="n">01</span><div><h4>Audit &amp; inventory</h4><p>An AI-assisted scan of the live product surfaces every color, spacing value, and component variation already in use — turning a messy UI into a measurable starting point in days, not weeks.</p></div></div>
+        <div class="li reveal"><span class="n">02</span><div><h4>Token architecture</h4><p>I define the primitive → semantic → component token layers. AI generates and names the ramps consistently; I set the structure, the contrast targets, and the semantics that make it themeable.</p></div></div>
+        <div class="li reveal"><span class="n">03</span><div><h4>Component generation</h4><p>Components and all their states are scaffolded directly from tokens, so the library goes wide quickly. I make the design decisions and interaction rules; AI removes the repetitive build.</p></div></div>
+        <div class="li reveal"><span class="n">04</span><div><h4>Accessibility &amp; QA</h4><p>Every token pairing and component state is checked for WCAG AA contrast, focus visibility, and target size — automatically, on every change, not as a final review.</p></div></div>
+        <div class="li reveal"><span class="n">05</span><div><h4>Figma ↔ code &amp; docs</h4><p>Tokens and components stay in parity both ways, and usage docs are generated alongside them — so designers and engineers are always working from the same, trustworthy source.</p></div></div>
+        <div class="li reveal"><span class="n">06</span><div><h4>Governance &amp; rollout</h4><p>Versioning, a real contribution path, and hands-on team onboarding make the system the default choice — so adoption sticks and the product stays consistent as it scales.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA — founder / owner focused -->
+<section class="cta">
+  <div class="wrap cta-grid">
+    <div class="reveal">
+      <p class="cta-kicker"><span class="live"></span>For founders &amp; product teams</p>
+      <h2>Your product is outgrowing its UI. <em class="italic-bold text-accent">I can fix that.</em></h2>
+    </div>
+    <div class="cta-side reveal">
+      <p class="prose prose--muted">If your teams keep rebuilding the same screens, your UI looks like three products, and shipping anything new is slow — that's a systems problem, and it's exactly what I solve. I bring the design-system craft and an AI-driven workflow that gets you there in a fraction of the usual time and cost. Let's talk about your product.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px">
+        <a href="contact.html" class="btn btn-primary" data-magnetic><span>Let's solve it together</span><span class="dot">→</span></a>
+        <a href="work.html" class="btn btn-secondary" data-cursor data-magnetic><span>Back to work</span><span class="dot">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="foot-grid">
+    <span>© 2026 Gnana Divakar</span>
+    <span data-clock>— local time</span>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/gnanadivakar" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+      <a href="https://www.instagram.com/gd.gnanadivakar" target="_blank" rel="noopener" data-cursor>Instagram</a>
+      <a href="https://www.behance.net/gnanadivakar" target="_blank" rel="noopener" data-cursor>Behance</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/lenis.min.js"></script>
+<script src="assets/theme.js"></script>
+<script>
+/* work-systems — live component specimens */
+(function () {
+  // tabs
+  document.querySelectorAll(".ds-tabs").forEach((t) => {
+    t.querySelectorAll("span").forEach((s) => {
+      s.setAttribute("tabindex", "0");
+      s.setAttribute("role", "tab");
+      const pick = () => { t.querySelectorAll("span").forEach((x) => x.classList.remove("on")); s.classList.add("on"); };
+      s.addEventListener("click", pick);
+      s.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    });
+  });
+  // toggles + checkboxes (real buttons)
+  document.querySelectorAll("button.ds-toggle, button.ds-check").forEach((b) =>
+    b.addEventListener("click", () => b.classList.toggle("off"))
+  );
+  // selectable chips
+  document.querySelectorAll("button.ds-chip").forEach((c) =>
+    c.addEventListener("click", () => c.classList.toggle("sel"))
+  );
+  // progress stepper
+  document.querySelectorAll("[data-stepper]").forEach((st) => {
+    const bar = st.querySelector(".ds-progress i");
+    const label = st.querySelector("[data-pval]");
+    let v = parseInt(st.dataset.stepper || "60", 10);
+    const set = (nv) => { v = Math.max(0, Math.min(100, nv)); bar.style.width = v + "%"; if (label) label.textContent = v + "% complete"; };
+    st.querySelectorAll(".ds-stepper button").forEach((btn) =>
+      btn.addEventListener("click", () => set(v + (btn.dataset.dir === "up" ? 10 : -10)))
+    );
+    set(v);
+  });
+  // slider value readout
+  document.querySelectorAll("input.ds-range").forEach((r) => {
+    const out = r.closest(".spec-stage").querySelector("[data-rval]");
+    const upd = () => { if (out) out.textContent = r.value; };
+    r.addEventListener("input", upd); upd();
+  });
+})();
+</script>
+</body>
+</html>

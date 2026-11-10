@@ -189,33 +189,14 @@
     window.addEventListener("pageshow", (e) => { if (e.persisted) document.body.classList.remove("leaving"); });
   }
 
-  /* custom cursor + magnetic + "view" label */
+  /* magnetic buttons (custom cursor removed — default system cursor is used) */
   if (fine && !RM) {
-    const cur = document.querySelector(".cursor");
-    const ring = document.querySelector(".cursor-ring");
-    if (cur && ring) {
-      let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my;
-      addEventListener("mousemove", (e) => {
-        mx = e.clientX; my = e.clientY;
-        cur.style.transform = `translate(${mx}px,${my}px) translate(-50%,-50%)`;
+    document.querySelectorAll("[data-magnetic]").forEach((el) => {
+      el.addEventListener("mousemove", (e) => {
+        const r = el.getBoundingClientRect();
+        el.style.transform = `translate(${(e.clientX - (r.left + r.width / 2)) * 0.25}px,${(e.clientY - (r.top + r.height / 2)) * 0.3}px)`;
       });
-      (function loop() {
-        rx += (mx - rx) * 0.16; ry += (my - ry) * 0.16;
-        ring.style.transform = `translate(${rx}px,${ry}px) translate(-50%,-50%)`;
-        requestAnimationFrame(loop);
-      })();
-      document.querySelectorAll("a,button,.case-media,[data-cursor]").forEach((el) => {
-        const view = el.getAttribute("data-cursor") === "view";
-        el.addEventListener("mouseenter", () => { ring.classList.add("hover"); if (view) ring.classList.add("view"); });
-        el.addEventListener("mouseleave", () => { ring.classList.remove("hover"); ring.classList.remove("view"); });
-      });
-      document.querySelectorAll("[data-magnetic]").forEach((el) => {
-        el.addEventListener("mousemove", (e) => {
-          const r = el.getBoundingClientRect();
-          el.style.transform = `translate(${(e.clientX - (r.left + r.width / 2)) * 0.25}px,${(e.clientY - (r.top + r.height / 2)) * 0.3}px)`;
-        });
-        el.addEventListener("mouseleave", () => { el.style.transform = ""; });
-      });
-    }
+      el.addEventListener("mouseleave", () => { el.style.transform = ""; });
+    });
   }
 })();
