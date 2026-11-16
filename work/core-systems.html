@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Site24x7 Design System — Case Study · Gnana Divakar</title>
+<meta name="description" content="Leading the Site24x7 design system — token architecture, a component library built for observability UI, accessibility, theming, and governance across many product teams." />
+<link rel="canonical" href="https://gnanadivakar.in/work/core-systems.html" />
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Gnana Divakar" />
+<meta property="og:url" content="https://gnanadivakar.in/work/core-systems.html" />
+<meta property="og:title" content="Site24x7 Design System — Case Study · Gnana Divakar" />
+<meta property="og:description" content="Leading the Site24x7 design system — token architecture, an observability component library, accessibility, theming, and governance across many product teams." />
+<meta property="og:image" content="https://gnanadivakar.in/assets/img/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Site24x7 Design System — Case Study · Gnana Divakar" />
+<meta name="twitter:description" content="Leading the Site24x7 design system — token architecture, an observability component library, accessibility, theming, and governance across many product teams." />
+<meta name="twitter:image" content="https://gnanadivakar.in/assets/img/og.jpg" />
+<link rel="stylesheet" href="../assets/theme.css" />
+<style>
+/* This case study presents the Site24x7 design system — the showcase is themed to
+   Site24x7's real brand palette (green + blue links). The portfolio chrome (nav)
+   stays on its own blue identity. */
+.cs-hero,.sec,.cta{--accent:#07843F;--accent-2:#089949;--metric:#07843F}
+.ds-live .ds-field:focus,.ds-live .ds-field:focus-visible{box-shadow:0 0 0 3px rgba(8,153,73,.18)}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="aurora"><div class="blob a"></div><div class="blob b"></div></div>
+<div class="progress"></div>
+<div class="cursor"></div>
+<div class="cursor-ring"><span class="label">View</span></div>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="../index.html" class="logo" data-cursor><span class="pulse"></span>Gnana Divakar</a>
+    <div class="nav-links">
+      <a href="../work.html" class="navlink active" data-cursor>Work</a>
+      <a href="../about.html" class="navlink" data-cursor>About</a>
+      <a href="../blog.html" class="navlink" data-cursor>Blog</a>
+      <a href="../contact.html" class="btn btn-primary btn-sm" data-cursor data-magnetic><span>Let's talk</span><span class="dot">→</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="cs-hero">
+  <div class="wrap">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
+      <a href="../index.html" data-cursor>Home</a><span class="sep" aria-hidden="true">/</span><a href="../work.html" data-cursor>Work</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">Site24x7 Design System</span>
+    </nav>
+    <p class="eyebrow reveal">Design System · Observability Platform · Design-system lead</p>
+    <div class="two-col" style="align-items:end;margin-top:24px">
+      <div class="body-col" style="grid-column:span 8">
+        <h1 class="line-mask"><span>Site24x7. <em class="italic-bold text-accent">One design language across the whole platform.</em></span></h1>
+        <div class="cs-tags reveal">
+          <span class="tag">Token Architecture</span><span class="tag">Component Library</span><span class="tag">Data Visualization</span><span class="tag">Accessibility (AA)</span><span class="tag">Theming</span><span class="tag">Governance</span>
+        </div>
+      </div>
+      <div class="lead-col reveal" style="grid-column:span 4">
+        <p class="prose">I led the design system for Site24x7 — a large-scale observability platform — building the token architecture, a component library tuned for dense monitoring UI, the accessibility baseline, and the governance that put every product team on one source of truth.</p>
+      </div>
+    </div>
+
+    <!-- outcome stat strip -->
+    <div class="ds-overview reveal" style="margin-top:clamp(32px,4vw,48px)">
+      <div class="ds-ov"><div class="n">One</div><div class="l">Source of truth, many teams</div></div>
+      <div class="ds-ov"><div class="n">Faster</div><div class="l">Screens ship quicker</div></div>
+      <div class="ds-ov"><div class="n">Full</div><div class="l">Component library &amp; tokens</div></div>
+      <div class="ds-ov"><div class="n">AA</div><div class="l">Accessibility baseline</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 OVERVIEW & MANDATE -->
+<section class="sec">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">01 — Overview &amp; Mandate</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>One platform, many module teams — <em class="italic-bold text-accent">and it showed.</em></span></h2>
+      <p class="cs-lead reveal">Site24x7 spans monitoring, dashboards, alerting, and reporting — each area built by a different team. The surface had grown faster than any shared standard, so the same control looked and behaved differently depending on where you were in the product. I was brought in to fix that at the root: not to paint over screens, but to give every team one system to build from.</p>
+
+      <div class="ds-meta reveal" style="margin-top:36px">
+        <div class="mi"><div class="mk">Role</div><div class="mv">Design-system lead<span>Strategy → tokens → components → governance</span></div></div>
+        <div class="mi"><div class="mk">Scope</div><div class="mv">End-to-end<span>Foundations, library, a11y, docs, rollout</span></div></div>
+        <div class="mi"><div class="mk">Timeline</div><div class="mv">2023 — Present<span>Ongoing ownership</span></div></div>
+        <div class="mi"><div class="mk">Partners</div><div class="mv">Design + Engineering<span>Multiple product teams</span></div></div>
+      </div>
+
+      <div class="callout reveal" style="margin-top:36px">
+        <p class="k">The cost of no system</p>
+        <div class="stats">
+          <div class="stat"><div class="v">Duplicated</div><div class="l">the same core components, rebuilt many times over</div></div>
+          <div class="stat"><div class="v">Scattered</div><div class="l">one-off color and spacing values across the UI</div></div>
+          <div class="stat"><div class="v">Slow</div><div class="l">every new screen started close to zero</div></div>
+        </div>
+        <p class="note">The brief wasn't "make it consistent." It was "make consistency the default, so teams move faster — not slower."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 ARCHITECTURE -->
+<section class="sec sec--alt">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">02 — Architecture</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>A layered token model — <em class="italic-bold text-accent">so one change moves everything.</em></span></h2>
+      <p class="cs-lead reveal">The decision that makes or breaks a system is where values live. I built four token tiers: components never touch a raw value — they bind to semantics, and themes remap the semantics. That's what lets the UI re-theme, support light and dark dashboards, or shift density without forking a single component.</p>
+
+      <div class="varbox reveal" style="margin-top:34px;max-width:40rem">
+        <p class="k">Token tiers</p>
+        <div class="grid">
+          <div class="cell"><div class="cn">01 · Primitive</div><div class="cv">Raw ramps &amp; scales</div></div>
+          <div class="cell"><div class="cn">02 · Semantic</div><div class="cv">Meaning &amp; intent</div></div>
+          <div class="cell"><div class="cn">03 · Component</div><div class="cv">Per-component API</div></div>
+          <div class="cell"><div class="cn">04 · Theme</div><div class="cv">Mode / brand / density</div></div>
+        </div>
+        <div class="foot">raw → meaning → component → theme</div>
+      </div>
+
+      <p class="cs-lead reveal" style="margin-top:28px">The trade-off was deliberate: more layers up front, far less maintenance forever. Below, the same components rendered in two theme modes — identical markup, identical component code, only the semantic layer remaps.</p>
+
+      <div class="ds-board reveal" style="grid-template-columns:1fr 1fr;margin-top:28px">
+        <div class="bp">
+          <span class="pk">Mode · Light</span>
+          <div class="stack">
+            <div class="row"><span class="ds-btn accent" style="pointer-events:none">Action</span><span class="ds-badge ok">Up</span></div>
+            <span class="ds-field focus">Semantic tokens</span>
+            <div class="ds-progress"><i></i></div>
+          </div>
+        </div>
+        <div class="bp" style="background:#141a18;border-color:rgba(255,255,255,.1)">
+          <span class="pk" style="color:rgba(235,234,230,.5)">Mode · Dark</span>
+          <div class="stack">
+            <div class="row"><span class="ds-btn accent" style="pointer-events:none">Action</span><span class="ds-badge ok" style="background:rgba(40,167,69,.18);border-color:rgba(40,167,69,.45);color:#6fdc8c">Up</span></div>
+            <span class="ds-field" style="background:#1b231f;border-color:rgba(255,255,255,.14);color:rgba(235,234,230,.6)">Semantic tokens</span>
+            <div class="ds-progress" style="background:rgba(255,255,255,.12)"><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 FOUNDATIONS -->
+<section class="sec">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">03 — Foundations</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>Foundations tuned for <em class="italic-bold text-accent">all-day monitoring use.</em></span></h2>
+      <p class="cs-lead reveal">Observability UI is read all day and dense with data. The palette is built on Site24x7's brand green with a blue link accent and a clear status set — calibrated so every text and status pairing meets WCAG AA on the product's surfaces.</p>
+
+      <!-- color ramps -->
+      <div class="ds-group reveal" style="margin-top:36px">
+        <p class="ds-gk">Color · Primitive Ramps <span class="muted">· 50 → 900</span></p>
+        <div style="display:flex;flex-direction:column">
+          <div class="ds-color-row">
+            <div class="crk">Brand<span>green</span></div>
+            <div class="ds-ramp">
+              <span style="background:#E7F6ED;color:#07843F">50</span><span style="background:#C6E9D3;color:#07843F">100</span><span style="background:#92D6AE;color:#0A6837">200</span><span style="background:#54C083;color:#0B4F2C">300</span><span style="background:#1DA75E;color:#fff">400</span><span style="background:#089949;color:#fff">500</span><span style="background:#07843F;color:#fff">600</span><span style="background:#0A6837;color:#fff">700</span><span style="background:#0B4F2C;color:#fff">800</span><span style="background:#08351F;color:#fff">900</span>
+            </div>
+          </div>
+          <div class="ds-color-row">
+            <div class="crk">Neutral<span>gray</span></div>
+            <div class="ds-ramp">
+              <span style="background:#F8F9FA;color:#30373C">50</span><span style="background:#E6EBEF;color:#30373C">100</span><span style="background:#DDE2E7;color:#30373C">200</span><span style="background:#C3CAD1;color:#30373C">300</span><span style="background:#9AA2A9;color:#fff">400</span><span style="background:#6A6C70;color:#fff">500</span><span style="background:#52555A;color:#fff">600</span><span style="background:#30373C;color:#fff">700</span><span style="background:#262B30;color:#fff">800</span><span style="background:#1B2329;color:#fff">900</span>
+            </div>
+          </div>
+          <div class="ds-color-row">
+            <div class="crk">Success · Up<span>green</span></div>
+            <div class="ds-ramp">
+              <span style="background:#EAF7EE;color:#1E8A38">50</span><span style="background:#CDEBD5;color:#1E8A38">100</span><span style="background:#9BD7AC;color:#176B2C">200</span><span style="background:#63C07F;color:#114D20">300</span><span style="background:#34A853;color:#fff">400</span><span style="background:#28A745;color:#fff">500</span><span style="background:#1E8A38;color:#fff">600</span><span style="background:#176B2C;color:#fff">700</span><span style="background:#114D20;color:#fff">800</span><span style="background:#0B3115;color:#fff">900</span>
+            </div>
+          </div>
+          <div class="ds-color-row">
+            <div class="crk">Warning · Trouble<span>amber</span></div>
+            <div class="ds-ramp">
+              <span style="background:#FEF6E6;color:#A66B08">50</span><span style="background:#FCE8BF;color:#A66B08">100</span><span style="background:#F8D080;color:#7E5106">200</span><span style="background:#F2B43F;color:#573804">300</span><span style="background:#E89C14;color:#fff">400</span><span style="background:#C9820A;color:#fff">500</span><span style="background:#A66B08;color:#fff">600</span><span style="background:#7E5106;color:#fff">700</span><span style="background:#573804;color:#fff">800</span><span style="background:#352102;color:#fff">900</span>
+            </div>
+          </div>
+          <div class="ds-color-row">
+            <div class="crk">Danger · Down<span>red</span></div>
+            <div class="ds-ramp">
+              <span style="background:#FDEDEE;color:#A52230">50</span><span style="background:#F9D2D5;color:#A52230">100</span><span style="background:#F0A3A9;color:#7E1A25">200</span><span style="background:#E56A73;color:#57121A">300</span><span style="background:#DC3545;color:#fff">400</span><span style="background:#C62A39;color:#fff">500</span><span style="background:#A52230;color:#fff">600</span><span style="background:#7E1A25;color:#fff">700</span><span style="background:#57121A;color:#fff">800</span><span style="background:#350B10;color:#fff">900</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- semantic tokens -->
+      <div class="ds-group reveal">
+        <p class="ds-gk">Color · Semantic Tokens <span class="muted">· what components bind to · AA = passes contrast</span></p>
+        <div class="ds-swatches">
+          <div class="ds-sw"><div class="chip" style="background:#1B2329"></div><div class="sw-meta"><div class="sw-name">fg / default</div><div class="sw-val">neutral.900</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#6A6C70"></div><div class="sw-meta"><div class="sw-name">fg / muted</div><div class="sw-val">neutral.500</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#07843F"></div><div class="sw-meta"><div class="sw-name">accent / solid</div><div class="sw-val">brand.600</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#0A6837"></div><div class="sw-meta"><div class="sw-name">accent / hover</div><div class="sw-val">brand.700</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#1958D7"></div><div class="sw-meta"><div class="sw-name">link / default</div><div class="sw-val">blue.600</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#1E8A38"></div><div class="sw-meta"><div class="sw-name">status / up</div><div class="sw-val">green.600</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#A66B08"></div><div class="sw-meta"><div class="sw-name">status / trouble</div><div class="sw-val">amber.600</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#A52230"></div><div class="sw-meta"><div class="sw-name">status / down</div><div class="sw-val">red.600</div><span class="aa">AA</span></div></div>
+          <div class="ds-sw"><div class="chip" style="background:#F8F9FA;box-shadow:inset 0 0 0 1px rgba(11,11,15,.1)"></div><div class="sw-meta"><div class="sw-name">surface / base</div><div class="sw-val">neutral.50</div></div></div>
+        </div>
+      </div>
+
+      <!-- type -->
+      <div class="ds-group reveal">
+        <p class="ds-gk">Typography <span class="muted">· modular scale</span></p>
+        <div class="ds-type">
+          <div class="ty"><span class="tk">display</span><span class="tv" style="font-size:40px">Clarity at scale</span><span class="ts">40 / 1.0 · 600</span></div>
+          <div class="ty"><span class="tk">heading</span><span class="tv" style="font-size:28px">Section heading</span><span class="ts">28 / 1.1 · 600</span></div>
+          <div class="ty"><span class="tk">title</span><span class="tv" style="font-size:20px">Card &amp; panel title</span><span class="ts">20 / 1.3 · 600</span></div>
+          <div class="ty"><span class="tk">body</span><span class="tv" style="font-size:16px;font-weight:400">Body text for comfortable reading</span><span class="ts">16 / 1.6 · 400</span></div>
+          <div class="ty"><span class="tk">mono</span><span class="tv" style="font-size:15px;font-weight:400;font-family:var(--mono)">120ms · 99.98% · 14ms</span><span class="ts">metrics &amp; logs</span></div>
+          <div class="ty"><span class="tk">caption</span><span class="tv" style="font-size:13px;font-weight:400;color:var(--ink-mute)">Caption &amp; metadata</span><span class="ts">13 / 1.4 · 400</span></div>
+        </div>
+      </div>
+
+      <!-- space + radius/elevation, compact -->
+      <div class="ds-group reveal">
+        <p class="ds-gk">Space, Radius &amp; Elevation</p>
+        <div class="ds-space" style="max-width:40rem">
+          <div class="sp"><span class="spk">space.1 · 4</span><div class="spbar" style="width:4%"></div></div>
+          <div class="sp"><span class="spk">space.2 · 8</span><div class="spbar" style="width:8%"></div></div>
+          <div class="sp"><span class="spk">space.4 · 16</span><div class="spbar" style="width:22%"></div></div>
+          <div class="sp"><span class="spk">space.6 · 24</span><div class="spbar" style="width:38%"></div></div>
+          <div class="sp"><span class="spk">space.8 · 32</span><div class="spbar" style="width:56%"></div></div>
+          <div class="sp"><span class="spk">space.12 · 48</span><div class="spbar" style="width:80%"></div></div>
+        </div>
+        <div class="ds-tiles" style="margin-top:20px">
+          <div class="ds-tile"><div class="box e1"></div><div><div class="tl-k">elevation.1</div><div class="tl-v">cards · rows</div></div></div>
+          <div class="ds-tile"><div class="box e2"></div><div><div class="tl-k">elevation.2</div><div class="tl-v">dropdowns · popovers</div></div></div>
+          <div class="ds-tile"><div class="box e3"></div><div><div class="tl-k">elevation.3</div><div class="tl-v">modals · dialogs</div></div></div>
+          <div class="ds-tile"><div class="box" style="border-radius:4px"></div><div><div class="tl-k">radius.sm · 4</div><div class="tl-v">inputs · chips</div></div></div>
+          <div class="ds-tile"><div class="box" style="border-radius:8px"></div><div><div class="tl-k">radius.md · 8</div><div class="tl-v">cards · panels</div></div></div>
+          <div class="ds-tile"><div class="box" style="border-radius:999px"></div><div><div class="tl-k">radius.full</div><div class="tl-v">buttons · pills</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 COMPONENTS -->
+<section class="sec sec--alt ds-live">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">04 — Components</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>A component isn't a shape — <em class="italic-bold text-accent">it's a contract.</em></span></h2>
+      <p class="cs-lead reveal">Every component is specified before it's styled: an API, a full state machine, token bindings, and accessibility rules. For an observability product that means status and data-density are first-class — a table, a status pill, or a chart has to stay legible at scale.</p>
+
+      <!-- inventory -->
+      <div class="ds-group reveal" style="margin-top:36px">
+        <p class="ds-gk">Library Inventory <span class="muted">· by category &amp; maturity</span></p>
+        <div class="ds-inv">
+          <div class="iv"><div class="ic">Actions</div><div class="il">Button, Icon button, Link, Menu, Dropdown, Segmented control</div><div class="iq">9 components</div><span class="ds-badge ok">Stable</span></div>
+          <div class="iv"><div class="ic">Forms</div><div class="il">Input, Select, Combobox, Multiselect, Checkbox, Radio, Toggle, Date range</div><div class="iq">14 components</div><span class="ds-badge ok">Stable</span></div>
+          <div class="iv"><div class="ic">Navigation</div><div class="il">Tabs, Breadcrumb, Sidebar, Pagination, Stepper</div><div class="iq">7 components</div><span class="ds-badge ok">Stable</span></div>
+          <div class="iv"><div class="ic">Data display</div><div class="il">Data table, Status indicator, Metric tile, Tag, Tooltip, Timeline</div><div class="iq">11 components</div><span class="ds-badge ok">Stable</span></div>
+          <div class="iv"><div class="ic">Charts &amp; viz</div><div class="il">Line, Area, Gauge, Heatmap, Sparkline, Donut</div><div class="iq">8 components</div><span class="ds-badge info">Beta</span></div>
+          <div class="iv"><div class="ic">Feedback</div><div class="il">Alert, Toast, Badge, Progress, Skeleton, Empty state</div><div class="iq">8 components</div><span class="ds-badge ok">Stable</span></div>
+          <div class="iv"><div class="ic">Overlays</div><div class="il">Modal, Drawer, Popover, Sheet</div><div class="iq">6 components</div><span class="ds-badge info">Beta</span></div>
+        </div>
+      </div>
+
+      <!-- flagship anatomy -->
+      <div class="ds-group reveal">
+        <p class="ds-gk">Anatomy · Button <span class="muted">· how every component is specified</span></p>
+        <div class="ds-speccard">
+          <div class="preview">
+            <button class="ds-btn accent">Primary</button>
+            <button class="ds-btn">Solid</button>
+            <button class="ds-btn ghost">Ghost</button>
+            <button class="ds-btn accent sm">Small</button>
+          </div>
+          <div class="spec-body">
+            <div class="ds-deflist">
+              <p class="dt">Anatomy &amp; Tokens</p>
+              <div class="d"><div class="dk">Container</div><div class="dv"><code>radius.full</code> · <code>space.3 / space.5</code> padding</div></div>
+              <div class="d"><div class="dk">Surface</div><div class="dv"><code>accent/solid</code>, shifts to <code>brand.700</code> on hover</div></div>
+              <div class="d"><div class="dk">Label</div><div class="dv"><code>fg/on-accent</code> · label token, 14 / 600</div></div>
+              <div class="d"><div class="dk">Icon slot</div><div class="dv">Optional, leading or trailing · <code>space.2</code> gap</div></div>
+              <div class="d"><div class="dk">Focus ring</div><div class="dv">2px <code>brand.600</code> + 3px halo</div></div>
+            </div>
+            <div class="ds-deflist">
+              <p class="dt">States &amp; Accessibility</p>
+              <div class="d"><div class="dk">States</div><div class="dv">Default · hover · active · focus · disabled · loading</div></div>
+              <div class="d"><div class="dk">Contrast</div><div class="dv">AA on every variant (≥ 4.5:1)</div></div>
+              <div class="d"><div class="dk">Target</div><div class="dv">Min 40px height · touch-safe hit area</div></div>
+              <div class="d"><div class="dk">Keyboard</div><div class="dv"><code>focus-visible</code> ring · Enter / Space to activate</div></div>
+              <div class="d"><div class="dk">Motion</div><div class="dv">120ms ease-out · honours reduced-motion</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- variants × states matrix -->
+      <div class="ds-group reveal">
+        <p class="ds-gk">Variants × States <span class="muted">· specified, not improvised</span></p>
+        <div class="ds-matrix-wrap">
+          <div class="ds-matrix">
+            <div class="mrow mhead">
+              <div class="mcell"></div>
+              <div class="mcell"><span class="mh">Default</span></div>
+              <div class="mcell"><span class="mh">Hover</span></div>
+              <div class="mcell"><span class="mh">Active</span></div>
+              <div class="mcell"><span class="mh">Disabled</span></div>
+            </div>
+            <div class="mrow">
+              <div class="mcell"><span class="rh">Primary</span></div>
+              <div class="mcell"><span class="ds-btn accent" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn accent is-hover" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn accent is-active" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn accent is-disabled" style="pointer-events:none">Action</span></div>
+            </div>
+            <div class="mrow">
+              <div class="mcell"><span class="rh">Solid</span></div>
+              <div class="mcell"><span class="ds-btn" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn is-hover" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn is-active" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn is-disabled" style="pointer-events:none">Action</span></div>
+            </div>
+            <div class="mrow">
+              <div class="mcell"><span class="rh">Ghost</span></div>
+              <div class="mcell"><span class="ds-btn ghost" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn ghost is-hover" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn ghost is-active" style="pointer-events:none">Action</span></div>
+              <div class="mcell"><span class="ds-btn ghost is-disabled" style="pointer-events:none">Action</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- curated live specimens -->
+      <div class="ds-group reveal">
+        <p class="ds-gk">Live Specimens <span class="muted">· real states — click, type, toggle</span></p>
+        <div class="ds-specimens">
+          <div class="ds-spec"><span class="spec-k">Tabs</span><div class="spec-stage"><span class="ds-tabs"><span class="on">Monitors</span><span>Alerts</span><span>Reports</span></span></div></div>
+          <div class="ds-spec"><span class="spec-k">Text input</span><div class="spec-stage col"><input class="ds-field" type="text" placeholder="Search monitors…" /></div></div>
+          <div class="ds-spec"><span class="spec-k">Select</span><div class="spec-stage col"><select class="ds-field"><option>Last 24 hours</option><option>Last 7 days</option><option>Last 30 days</option></select></div></div>
+          <div class="ds-spec"><span class="spec-k">Toggle &amp; checkbox</span><div class="spec-stage"><button class="ds-toggle" aria-label="Toggle"></button><button class="ds-toggle off" aria-label="Toggle"></button><button class="ds-check" aria-label="Checkbox"></button></div></div>
+          <div class="ds-spec"><span class="spec-k">Status · monitor states</span><div class="spec-stage"><span class="ds-badge ok">Up</span><span class="ds-badge warn">Trouble</span><span class="ds-badge danger">Down</span><span class="ds-badge mute">Maintenance</span></div></div>
+          <div class="ds-spec" data-stepper="60"><span class="spec-k">Uptime · live</span><div class="spec-stage col"><div class="ds-progress"><i></i></div><div style="display:flex;justify-content:space-between;align-items:center"><span class="spec-k" style="color:var(--ink-mute)" data-pval>60% complete</span><span class="ds-stepper"><button data-dir="down" aria-label="Decrease">−</button><button data-dir="up" aria-label="Increase">+</button></span></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 GOVERNANCE & ADOPTION -->
+<section class="sec">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">05 — Governance &amp; Adoption</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>A system is only as good <em class="italic-bold text-accent">as its adoption.</em></span></h2>
+      <p class="cs-lead reveal">Shipping the library is the easy half. The real work is making it the path of least resistance — so teams reach for it by default instead of rebuilding. That means influence, not mandate: parity, contribution, versioning, and docs that answer "how do I…" before anyone has to ask.</p>
+      <div class="rowlist reveal" style="margin-top:44px">
+        <div class="rl"><div class="k">Source of truth</div><div><h3>Figma ↔ code parity</h3><p>Tokens and components are defined once and kept in sync between the Figma library and production code — a designer's file and the shipped UI never drift.</p></div></div>
+        <div class="rl"><div class="k">Contribution</div><div><h3>A clear way to contribute</h3><p>A proposal → review → publish path lets any team request or add a pattern, so the system grows from real needs instead of a committee guessing in advance.</p></div></div>
+        <div class="rl"><div class="k">Versioning</div><div><h3>Versioned, documented releases</h3><p>Semantic versioning with changelogs and migration notes, so teams adopt updates on their own schedule without surprise breakage.</p></div></div>
+        <div class="rl"><div class="k">Enablement</div><div><h3>Onboarding that sticks</h3><p>Usage docs, do/don't guidance, and hands-on onboarding turn the system from "available" into "the obvious choice" for every team.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 IMPACT -->
+<section class="sec sec--alt">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">06 — Impact</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>Consistency became the default, <em class="italic-bold text-accent">and speed came with it.</em></span></h2>
+      <p class="cs-lead reveal">The system turned "stay consistent" from a per-screen discipline into something teams got for free — and shipping got faster because of it.</p>
+      <div class="metricgrid reveal" style="margin-top:44px">
+        <div class="m"><div class="mn">01</div><div class="mv"><em data-count="90" data-suffix="%">90%</em></div><div class="ml">Component Adoption</div><div class="md">Of new UI assembled from the system instead of built from scratch.</div><div class="ba"><div class="r"><span>Before</span><span>Now</span></div><div class="bar" style="--w:90%"><i></i></div></div></div>
+        <div class="m"><div class="mn">02</div><div class="mv">−<em data-count="40" data-suffix="%">40%</em></div><div class="ml">Time to Ship</div><div class="md">Less time rebuilding the basics on every new screen.</div><div class="ba"><div class="r"><span>Effort before</span><span>After</span></div><div class="bar" style="--w:60%"><i></i></div></div></div>
+        <div class="m"><div class="mn">03</div><div class="mv"><em data-count="60">60</em>+</div><div class="ml">Components · 320+ Tokens</div><div class="md">A full component library and layered token architecture, one source of truth.</div></div>
+        <div class="m"><div class="mn">04</div><div class="mv"><em data-count="8">8</em></div><div class="ml">Teams on One System</div><div class="md">Product teams building from the same foundation and design language.</div></div>
+        <div class="m"><div class="mn">05</div><div class="mv">AA</div><div class="ml">Accessibility Baseline</div><div class="md">WCAG AA contrast and keyboard support built into every component.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 PRINCIPLES -->
+<section class="sec">
+  <div class="wrap two-col">
+    <div class="lead-col"><p class="eyebrow reveal">07 — Principles</p></div>
+    <div class="body-col">
+      <h2 class="sec-h line-mask"><span>What I carry into <em class="italic-bold text-accent">every system I build.</em></span></h2>
+      <div class="stacklist" style="margin-top:40px">
+        <div class="li reveal"><span class="n">01</span><div><h4>A design system is a product, not a project</h4><p>It has users — the teams — a roadmap, releases, and support. Treating it as a one-time deliverable is why most libraries quietly die after launch.</p></div></div>
+        <div class="li reveal"><span class="n">02</span><div><h4>Tokens are the system; components are the surface</h4><p>Get the token layers right and everything above them — theming, scale, consistency — gets easier. Get them wrong and no amount of polish saves you.</p></div></div>
+        <div class="li reveal"><span class="n">03</span><div><h4>Adoption is designed, not mandated</h4><p>If using the system is harder than going around it, teams go around it. Parity, docs, and a real contribution path are features, not paperwork.</p></div></div>
+        <div class="li reveal"><span class="n">04</span><div><h4>In dense products, clarity is the feature</h4><p>Observability UI lives or dies on legibility under load. The system's job is to make the right pattern the easy one, so every screen stays readable at scale.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA — founder / owner focused -->
+<section class="cta">
+  <div class="wrap cta-grid">
+    <div class="reveal">
+      <p class="cta-kicker"><span class="live"></span>For founders &amp; product teams</p>
+      <h2>Your product is outgrowing its UI. <em class="italic-bold text-accent">I can fix that.</em></h2>
+    </div>
+    <div class="cta-side reveal">
+      <p class="prose prose--muted">If your teams keep rebuilding the same screens, your UI looks like three products, and shipping anything new is slow — that's a systems problem, and it's exactly what I solve. I bring senior design-system craft and an AI-driven workflow that gets you there in a fraction of the usual time and cost. Let's talk about your product.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px">
+        <a href="../contact.html" class="btn btn-primary" data-magnetic><span>Let's solve it together</span><span class="dot">→</span></a>
+        <a href="../work.html" class="btn btn-secondary" data-cursor data-magnetic><span>Back to work</span><span class="dot">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="foot-grid">
+    <span>© 2026 Gnana Divakar</span>
+    <span data-clock>— local time</span>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/gnanadivakar" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+      <a href="https://www.instagram.com/gd.gnanadivakar" target="_blank" rel="noopener" data-cursor>Instagram</a>
+      <a href="https://www.behance.net/gnanadivakar" target="_blank" rel="noopener" data-cursor>Behance</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/lenis.min.js"></script>
+<script src="../assets/theme.js"></script>
+<script>
+/* core-systems — live component specimens */
+(function () {
+  document.querySelectorAll(".ds-tabs").forEach((t) => {
+    t.querySelectorAll("span").forEach((s) => {
+      s.setAttribute("tabindex", "0");
+      s.setAttribute("role", "tab");
+      const pick = () => { t.querySelectorAll("span").forEach((x) => x.classList.remove("on")); s.classList.add("on"); };
+      s.addEventListener("click", pick);
+      s.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    });
+  });
+  document.querySelectorAll("button.ds-toggle, button.ds-check").forEach((b) =>
+    b.addEventListener("click", () => b.classList.toggle("off"))
+  );
+  document.querySelectorAll("[data-stepper]").forEach((st) => {
+    const bar = st.querySelector(".ds-progress i");
+    const label = st.querySelector("[data-pval]");
+    let v = parseInt(st.dataset.stepper || "60", 10);
+    const set = (nv) => { v = Math.max(0, Math.min(100, nv)); bar.style.width = v + "%"; if (label) label.textContent = v + "% complete"; };
+    st.querySelectorAll(".ds-stepper button").forEach((btn) =>
+      btn.addEventListener("click", () => set(v + (btn.dataset.dir === "up" ? 10 : -10)))
+    );
+    set(v);
+  });
+})();
+</script>
+</body>
+</html>
