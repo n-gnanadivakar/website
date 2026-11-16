@@ -103,7 +103,11 @@
     (es) => es.forEach((e) => { if (e.isIntersecting) { num(e.target); cio.unobserve(e.target); } }),
     { threshold: 0.6 }
   );
-  document.querySelectorAll("[data-count]").forEach((el) => cio.observe(el));
+  /* markup carries the real values (crawlers, no-JS); reset to 0 here so the count-up still plays */
+  document.querySelectorAll("[data-count]").forEach((el) => {
+    el.textContent = (el.dataset.prefix || "") + "0" + (el.dataset.suffix || "");
+    cio.observe(el);
+  });
 
   /* before/after bars */
   const bio = new IntersectionObserver(
